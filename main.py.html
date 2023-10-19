@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #2aacb8;}
+.ln { color: #4b5059; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">per_cent </span><span class="s1">= {}</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0">per_cent </span><span class="s1">= {</span><span class="s2">'ТКБ'</span><span class="s1">: </span><span class="s3">5.6</span><span class="s1">, </span><span class="s2">'СКБ'</span><span class="s1">: </span><span class="s3">5.9</span><span class="s1">, </span><span class="s2">'ВТБ'</span><span class="s1">: </span><span class="s3">4.28</span><span class="s1">, </span><span class="s2">'СБЕР'</span><span class="s1">: </span><span class="s3">4.0</span><span class="s1">}</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s0">money </span><span class="s1">= </span><span class="s0">int</span><span class="s1">(</span><span class="s0">input</span><span class="s1">(</span><span class="s2">&quot;Вводите сумму, которую желаете положить под проценты:&quot;</span><span class="s1">))</span>
+<a name="l4"><span class="ln">4    </span></a><span class="s0">TKB </span><span class="s1">= </span><span class="s0">int</span><span class="s1">((</span><span class="s0">per_cent</span><span class="s1">[</span><span class="s2">'ТКБ'</span><span class="s1">])*(</span><span class="s0">money</span><span class="s1">/</span><span class="s3">100</span><span class="s1">))</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s0">SKB </span><span class="s1">= </span><span class="s0">int</span><span class="s1">((</span><span class="s0">per_cent</span><span class="s1">[</span><span class="s2">'СКБ'</span><span class="s1">])*(</span><span class="s0">money</span><span class="s1">/</span><span class="s3">100</span><span class="s1">))</span>
+<a name="l6"><span class="ln">6    </span></a><span class="s0">VTB </span><span class="s1">= </span><span class="s0">int</span><span class="s1">((</span><span class="s0">per_cent</span><span class="s1">[</span><span class="s2">'ВТБ'</span><span class="s1">])*(</span><span class="s0">money</span><span class="s1">/</span><span class="s3">100</span><span class="s1">))</span>
+<a name="l7"><span class="ln">7    </span></a><span class="s0">SBER </span><span class="s1">=</span><span class="s0">int</span><span class="s1">((</span><span class="s0">per_cent</span><span class="s1">[</span><span class="s2">'СБЕР'</span><span class="s1">])*(</span><span class="s0">money</span><span class="s1">/</span><span class="s3">100</span><span class="s1">))</span>
+<a name="l8"><span class="ln">8    </span></a>
+<a name="l9"><span class="ln">9    </span></a><span class="s0">deposit </span><span class="s1">= [</span><span class="s0">TKB</span><span class="s1">, </span><span class="s0">SKB</span><span class="s1">, </span><span class="s0">VTB</span><span class="s1">, </span><span class="s0">SBER</span><span class="s1">]</span>
+<a name="l10"><span class="ln">10   </span></a><span class="s0">print</span><span class="s1">(</span><span class="s2">&quot;Накопленные средства за год в каждом из банков =&quot;</span><span class="s1">, </span><span class="s0">deposit</span><span class="s1">)</span>
+<a name="l11"><span class="ln">11   </span></a><span class="s0">print</span><span class="s1">(</span><span class="s2">&quot;Максимальная сумма, которую вы можете заработать:&quot;</span><span class="s1">, </span><span class="s0">max</span><span class="s1">(</span><span class="s0">deposit</span><span class="s1">))</span>
+<a name="l12"><span class="ln">12   </span></a><span class="s0">print</span><span class="s1">(</span><span class="s0">per_cent</span><span class="s1">)</span></pre>
+</body>
+</html>
